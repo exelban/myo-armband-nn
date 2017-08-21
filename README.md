@@ -75,6 +75,7 @@ I know that making prediction on training dataset wrong. But i don't have time t
 | ReLu |
 | Dropout |
 | **Softmax_linear** |
+![](https://s3.eu-central-1.amazonaws.com/serhiy/Github_repo/myo-armband-nn-model.png)
 
 
 ## License
