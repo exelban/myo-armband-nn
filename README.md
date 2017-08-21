@@ -1,5 +1,5 @@
 # myo-armband-nn
-Gesture recognition using myo armband via neural network (tensorflow library).
+Gesture recognition using [myo armband](https://www.myo.com) via neural network (tensorflow library).
 ![](https://s3.eu-central-1.amazonaws.com/serhiy/Github_repo/myo-armband-nn-logo.jpg)
 
 
