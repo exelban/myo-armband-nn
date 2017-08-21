@@ -14,16 +14,30 @@ Gesture recognition using myo armband via neural network (tensorflow library).
 
 
 ## Collecting data
-
+You can use your own scripts for collecting EMG data from Myo armband.
+But you need to push 64-value array with data from each sensor.<br />
+By default myo-python returns 8-value array from each sensors.
+Each sensor presented by 2-value array from each sensor: ```[datetime, [EMG DATA]]```.<br />
+In repo are collected dataset from Myo armband collected by me. Dataset contains only 5 gestures:
+```
+👍 - Ok    (1)
+✊️ - Fist  (2)
+✌️ - Like  (3)
+🤘 - Rock  (4)
+🖖 - Spock (5)
+```
 
 ## Training network
-### Train network
 ```sh
 python3 train.py
 ```
 75k iteration take about 20 min on GTX 960 or 2h on i3-6100. (17:24)
 
+Accuracy after ~75k iteration:
+![](https://s3.eu-central-1.amazonaws.com/serhiy/Github_repo/myo-armband-nn-accuracy.png)
 
+Loose after ~75k iteration:
+![](https://s3.eu-central-1.amazonaws.com/serhiy/Github_repo/myo-armband-nn-losse.png)
 
 ## Prediction
 ### Prediction on data from MYO armband
@@ -31,6 +45,7 @@ python3 train.py
 python3 predict.py
 ```
 You must have installed MYO SDK.
+Script will return number (0-5) witch represent gesture (0 - relaxed arm).
 
 ### Prediction on training dataset
 ```sh
@@ -47,6 +62,7 @@ Accuracy on Test-Set: 98.27% (19235 / 19573)
 [  14   22   13   21    5 3165] (5) Spock
  (0) (1) (2) (3) (4) (5)
 ```
+I know that making prediction on training dataset wrong. But i don't have time to make testing dataset(
 
 
 ## License
