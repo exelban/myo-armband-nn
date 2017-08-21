@@ -31,7 +31,7 @@ In repo are collected dataset from Myo armband collected by me. Dataset contains
 ```sh
 python3 train.py
 ```
-75k iteration take about 20 min on GTX 960 or 2h on i3-6100. (17:24)
+75k iteration take about 20 min on GTX 960 or 2h on i3-6100.
 
 Accuracy after ~75k iteration:
 ![](https://s3.eu-central-1.amazonaws.com/serhiy/Github_repo/myo-armband-nn-accuracy.png)
