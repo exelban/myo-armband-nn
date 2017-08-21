@@ -65,5 +65,17 @@ Accuracy on Test-Set: 98.27% (19235 / 19573)
 I know that making prediction on training dataset wrong. But i don't have time to make testing dataset(
 
 
+## Model
+| **Fully connected 1 (528 neurons)** |
+| :---: |
+| ReLu |
+| **Fully connected 2 (786 neurons)** |
+| ReLu |
+| **Fully connected 3 (1248 neurons)**  |
+| ReLu |
+| Dropout |
+| **Softmax_linear** |
+
+
 ## License
 [GNU General Public License v3.0](https://github.com/exelban/myo-armband-nn/blob/master/LICENSE)
