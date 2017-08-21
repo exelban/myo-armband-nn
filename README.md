@@ -33,10 +33,10 @@ python3 train.py
 ```
 75k iteration take about 20 min on GTX 960 or 2h on i3-6100.
 
-Accuracy after ~75k iteration:
+Accuracy after ~75k iteration (98.75%):
 ![](https://s3.eu-central-1.amazonaws.com/serhiy/Github_repo/myo-armband-nn-accuracy.png)
 
-Loose after ~75k iteration:
+Loose after ~75k iteration (1.28):
 ![](https://s3.eu-central-1.amazonaws.com/serhiy/Github_repo/myo-armband-nn-losse.png)
 
 ## Prediction
