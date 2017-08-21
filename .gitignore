@@ -1,1 +1,3 @@
 .idea/
+/data/collection_data.py
+/data/prepare_data.py

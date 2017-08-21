@@ -15,7 +15,7 @@ x, y, output, global_step, y_pred_cls = model(_CLASS_SIZE)
 
 
 loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=output, labels=y))
-tf.summary.scalar("loss", loss)
+tf.summary.scalar("Loss", loss)
 optimizer = tf.train.RMSPropOptimizer(learning_rate=1e-4).minimize(loss, global_step=global_step)
 
 
@@ -63,7 +63,7 @@ def train(num_iterations = 1000):
             print("Saved checkpoint.")
 
 
-train(50000)
+train(75000)
 
 
 sess.close()
