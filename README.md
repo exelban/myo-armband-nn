@@ -17,7 +17,10 @@ Gesture recognition using [myo armband](https://www.myo.com) via neural network 
 You can use your own scripts for collecting EMG data from Myo armband.
 But you need to push 64-value array with data from each sensor.<br />
 By default myo-python returns 8-value array from each sensors.
-Each sensor presented by 2-value array from each sensor: ```[datetime, [EMG DATA]]```.<br />
+Each output return by 2-value array: ```[datetime, [EMG DATA]]```.<br />
+64 - value array its 8 output from armband. Just put it to one dimension array.
+So you just need to collect 8 values with gesture from armband (if you read data 10 times/s its not a problem).
+
 In repo are collected dataset from Myo armband collected by me. Dataset contains only 5 gestures:
 ```
 👍 - Ok    (1)
