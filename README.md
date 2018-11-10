@@ -1,3 +1,11 @@
+# Archived project. No maintenance.
+
+This project is not maintained anymore and is archived. Feel free to fork and make your own changes if needed.
+It's because [Myo production and sales has officially ended as of Oct 12, 2018](https://support.getmyo.com/hc/en-us).
+
+Thanks to everyone for their valuable feedback.
+
+
 # myo-armband-nn
 Gesture recognition using [myo armband](https://www.myo.com) via neural network (tensorflow library).
 ![](https://s3.eu-central-1.amazonaws.com/serhiy/Github_repo/myo-armband-nn-logo.jpg)
